@@ -22,6 +22,7 @@ model Category {
   createdAt DateTime @default(now())
   name      String
   userId    String
+  icon      String
   type      String   @default("income")
 
   @@unique([name, userId, type])
